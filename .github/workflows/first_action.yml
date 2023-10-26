@@ -1,0 +1,19 @@
+name: first workflow #name of workflow
+
+on: workflow_dispatch #trigger, in this case manual trigger
+
+jobs:
+
+  job-first:
+
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Print Greeting
+
+        run: echo "Hello World!"
+
+      - name: Pring goodbye
+
+        run: echo "Done, byee!"
